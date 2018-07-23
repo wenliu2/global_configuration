@@ -35,6 +35,7 @@ let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 
 Plugin 'leafgarland/typescript-vim'
+Plugin 'pangloss/vim-javascript'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -61,11 +62,12 @@ au BufNewFile,BufRead *.py
     \ set autoindent |
     \ set fileformat=unix 
 
-au BufNewFile,BufRead *.js, *.html, *.css
-    \ set tabstop=2 |
-    \ set softtabstop=2 |
-    \ set shiftwidth=2 |
-    \ set fileformat=unix
+
+"au BufNewFile,BufRead *.js, *.html, *.css
+"    \ set tabstop=2 |
+"    \ set softtabstop=2 |
+"    \ set shiftwidth=2 |
+"    \ set fileformat=unix
 
 au BufNewFile,BufRead *.ts 
     \ set tabstop=4 |
